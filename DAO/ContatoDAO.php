@@ -7,9 +7,14 @@ class ContatoDAO
 
     public function __construct()
     {
-        $dsn = "mysql:host=localhost;port=3306;dbname=db_alphacode_contacts";
+        $host = "localhost";
+        $username = "root";
+        $port = "3306";
+        $password = "EkkoDeZa1";
+        $database = "db_alphacode_contacts";
 
-        $this->conexao = new PDO($dsn, 'root', 'EkkoDeZa1');
+        $dsn = "mysql:host=$host;port=$port;dbname=$database";
+        $this->conexao = new PDO($dsn, $username, $password);
         $this->conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->conexao->exec("SET NAMES 'utf8mb4'");
     }
