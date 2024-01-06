@@ -1,0 +1,79 @@
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 6%;
+    border-bottom: 1px solid dimgrey;
+}
+
+.inputForm {
+    margin-bottom: 3%;
+    margin-right: 8.3%;
+}
+
+.form-control {
+    height: 50px;
+    font-size: 1.1rem;
+    border-top: 0;
+    border: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgb(197, 197, 197);
+    border-radius: 0;
+}
+
+.form-check-input{
+    cursor: pointer;
+}
+
+.lista_contatos {
+    padding: 5% 3% 3% 3%;
+} 
+
+.btn-primary {
+    background-color: #068ED0;
+    color: #fff;
+    margin-right: 8.4%;
+}
+
+.acao{
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.acao:hover{
+    transform: scale(120%);
+}
+
+tbody{
+    box-shadow: 0px 5px 3px rgb(197, 197, 197);
+}
+
+@media(max-width: 580px) {
+    form {
+        padding-right: 0px;
+    }
+
+    .inputForm {
+        margin: 0;
+        padding-right: 0px;
+        width: 95%;
+    }
+
+    .btn-primary {
+        margin-right: 0;
+    }
+
+    .row {
+        margin-right: 0;
+    }
+
+    .lista_contatos {
+        padding: 0px;
+        width: 90%;
+    }
+}
